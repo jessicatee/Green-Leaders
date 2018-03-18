@@ -1,6 +1,72 @@
-h1 {
+body {
+	background-color: #03610a;
+	padding-top: 200px;
+
+}
+
+h1, h2, h3 {
+	font-family: 'Exo 2', sans-serif;
 	text-align: center;
-	margin: 50px 0;
+}
+
+h1 {
+	margin:20px 0;
+	color: #F1D382;
+}
+
+h2 {
+	color: #03610a;
+	margin: 50px 0px 100px 0px;
+}
+
+button {
+	margin: 0 auto;
+    display: block;
+    background-color: #03610a;
+    color: #f1d382;
+    padding: 15px;
+    width: 150px;
+    border-radius: 10px;
+    border: 3px solid #f1d382;
+    font-size: 20px;
+}
+
+img {
+	margin: 0 auto;
+    display: block;
+    max-width: 250px;
+}
+
+label {
+	color: #517664;
+}
+
+#about {
+	background-color: white;
+	height: 400px;
+}
+
+#awards {
+	background-color: #F1D382;
+	padding: 50px 0;
+}
+
+.flexContainer {
+	display: flex;
+}
+
+.flexSpaceAround {
+	justify-content: space-around;
+}
+
+.col {
+	width: 32%;
+	border: 1px solid #777777;
+	border-radius: 8px;
+    background: #03610a;
+    padding: 20px;
+    margin: 0 30px;
+    color: #F1D382;
 }
 
 .wrapper {
@@ -12,3 +78,20 @@ h1 {
 	width: 100%;
 }
 
+#jumbotron {
+	padding-bottom: 200px;
+}
+
+#successMessage {
+	display: none;
+}
+
+#signup {
+	background-color: #C9DBBA;
+	padding: 200px 0;
+}
+
+#pledgeForm {
+	width: 50%;
+	margin: 0 auto;
+}

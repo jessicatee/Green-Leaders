@@ -19,13 +19,24 @@ $.fn.serializeObject = function()
 };
 
 $('#submit-form').on('click', function(e) {
+	let pledgeForm = document.getElementsByTagName(form);
+	let successfulPledge = document.querySelector('#successMessage');
+  
   e.preventDefault();
+
+ 
+
   var jqxhr = $.ajax({
     url: url,
     method: "GET",
     dataType: "json",
     data: $form.serializeObject()
   });
+
+  pledgeForm.style.display = "none";
+  successfulPledge.style.display = "block";
+
+
 });
 
 //.success( console.log('success'););

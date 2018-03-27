@@ -76,6 +76,10 @@ label {
     padding: 20px;
     margin: 0 30px;
     color: #F1D382;
+    -webkit-box-shadow: 3px 3px 10px 0px rgba(32,32,32,1);
+	-moz-box-shadow: 3px 3px 10px 0px rgba(32,32,32,1);
+	box-shadow: 3px 3px 10px 0px rgba(32,32,32,1);
+	border-radius: 5px;
 }
 
 .wrapper {
@@ -85,6 +89,10 @@ label {
 
 .content {
 	width: 100%;
+}
+
+.medal {
+	max-width: 200px;
 }
 
 #jumbotron {

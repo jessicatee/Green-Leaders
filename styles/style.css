@@ -1,6 +1,7 @@
 body {
 	background-color: #03610a;
 	padding-top: 200px;
+	font-family: 'Lato', sans-serif;
 
 }
 
@@ -9,7 +10,7 @@ body {
 }
 
 footer {
-	padding-top: 50px;
+	padding-top: 100px;
 	background-color: #03610a; 
 	color: #F1D382;
 }
@@ -20,10 +21,12 @@ footer .row {
 
 footer h2 {
 	color: #F1D382;
+	margin: 0;
+	padding: 0;
 }
 
 h1, h2, h3 {
-	font-family: 'Exo 2', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 }
 
@@ -123,6 +126,7 @@ label {
 
 #jumbotron {
 	padding-bottom: 200px;
+	/*height: calc(100vh);*/
 }
 
 #successMessage {
@@ -149,13 +153,87 @@ label {
 	color: inherit;
 }
 
-#signature a:hover {
+#signature a:hover,
+footer ul a:hover,
+footer a:hover {
 	color: #eceef1
 }
 
 #pledgeForm {
 	width: 50%;
 	margin: 0 auto;
+}
+
+/*#footer-map	{
+	width: 100%;
+	max-height: 250px;
+}*/
+
+
+/*#footer-right, #footer-left {
+	border: 1px solid black;
+}*/
+
+/*#footer-left p {
+	padding: 0;
+	margin: 0;
+}*/
+
+/*#footer-right {
+	text-align: center;
+}*/
+
+footer ul {
+	list-style: none;
+	text-align: center;
+	padding-left: 0;
+/*	margin-top: 37px;
+    margin-bottom: 0px;*/
+}
+
+footer li {
+	display: inline;
+}
+
+#email {
+	text-align: center;
+	font-weight: 300;
+}
+
+#twitter-icon {
+	margin-right: 40px;
+}
+
+.social-links {
+	margin-top: 40px;
+}
+
+.footer-nav li:nth-child(2) {
+	border-left: 1px solid;
+    border-right: 1px solid;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.footer-nav li:first-child {
+    padding-right: 40px;
+}
+
+.footer-nav li:last-child {
+    padding-left: 40px;
+}
+
+.social-links a {
+	color: rgb(241, 211, 130);
+	text-decoration: none;
+}
+
+#insta-icon {
+	margin: 0 40px;
+}
+
+.social-links .fa-4x {
+	vertical-align: middle;
 }
 
 @media screen and (max-width: 991px) {

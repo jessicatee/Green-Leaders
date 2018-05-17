@@ -37,6 +37,10 @@ h2 {
 	margin: 50px 0px 100px 0px;
 }
 
+#signup h2 {
+	margin: 50px 0px 50px 0px;
+}
+
 button {
 	margin: 0 auto;
     display: block;
@@ -78,7 +82,7 @@ label {
 
 #awards {
 	background-color: #F1D382;
-	padding: 50px 0;
+	padding: 50px 0 100px 0;
 }
 
 .container-fluid {
@@ -132,7 +136,7 @@ label {
 
 #signup {
 	background-color: #C9DBBA;
-	padding: 50px 0 50px 0;
+	padding: 50px 0 100px 0;
 }
 
 #signature {
@@ -152,4 +156,16 @@ label {
 #pledgeForm {
 	width: 50%;
 	margin: 0 auto;
+}
+
+@media screen and (max-width: 991px) {
+  #footer-left {
+  	padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #footer-right {
+  	padding-left: 50px;
+  }
 }

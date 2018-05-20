@@ -1,28 +1,10 @@
+/*--------- SITE-WIDE STYLES -----------*/
+
 body {
 	background-color: #03610a;
 	padding-top: 200px;
 	font-family: 'Lato', sans-serif;
 
-}
-
-.wrapper {
-	width: 100%;
-}
-
-footer {
-	padding-top: 100px;
-	background-color: #03610a; 
-	color: #F1D382;
-}
-
-footer .row {
-	padding-bottom: 50px;
-}
-
-footer h2 {
-	color: #F1D382;
-	margin: 0;
-	padding: 0;
 }
 
 h1, h2, h3 {
@@ -38,10 +20,6 @@ h1 {
 h2 {
 	color: #03610a;
 	margin: 50px 0px 100px 0px;
-}
-
-#signup h2 {
-	margin: 50px 0px 50px 0px;
 }
 
 button {
@@ -66,6 +44,46 @@ label {
 	color: #517664;
 }
 
+footer {
+	padding-top: 100px;
+	background-color: #03610a; 
+	color: #F1D382;
+}
+
+footer ul {
+	list-style: none;
+	text-align: center;
+	padding-left: 0;
+}
+
+footer li {
+	display: inline;
+}
+
+footer h2 {
+	color: #F1D382;
+	margin: 0;
+	padding: 0;
+}
+
+/*--------- LAYOUT -----------*/
+
+.wrapper {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.col-lg-4 {
+	padding: 0;
+}
+
+/*--------- MAST-HEAD -----------*/
+
 .navbar {
 	background-color: rgba(241, 211, 130,0.75);
 }
@@ -78,27 +96,28 @@ label {
 	color: #03610a;
 }
 
+#jumbotron {
+	padding-bottom: 200px;
+}
+
+#signup h2 {
+	margin: 50px 0px 50px 0px;
+}
+
 #about {
 	background-color: white;
-	height: 400px;
+	color: #03610a;
+	padding: 50px 0 100px 0;
 }
+
+/*--------- AWARDS -----------*/
 
 #awards {
 	background-color: #F1D382;
 	padding: 50px 0 100px 0;
 }
 
-.container-fluid {
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.col-lg-4 {
-	padding: 0;
-}
-
 .awards-col {
-	/*width: 32%;*/
 	border: 1px solid #777777;
 	border-radius: 8px;
     background: #03610a;
@@ -111,52 +130,22 @@ label {
 	border-radius: 5px;
 }
 
-.wrapper {
-	max-width: 80%;
-	margin: 0 auto;
-}
-
-.content {
-	width: 100%;
-}
-
 .medal {
 	max-width: 200px;
+	margin: 30px auto;
 }
 
-#jumbotron {
-	padding-bottom: 200px;
-	/*height: calc(100vh);*/
-}
+/*.content {
+	width: 100%;
+}*/
 
 #successMessage {
 	display: none;
 }
 
-#about {
-	padding-top: 50px;
-}
-
-
 #signup {
 	background-color: #C9DBBA;
 	padding: 50px 0 100px 0;
-}
-
-#signature {
-	text-align: center;
-	font-size: .7rem;
-}
-
-#signature a {
-	text-decoration: none;
-	color: inherit;
-}
-
-#signature a:hover,
-footer ul a:hover,
-footer a:hover {
-	color: #eceef1
 }
 
 #pledgeForm {
@@ -164,35 +153,11 @@ footer a:hover {
 	margin: 0 auto;
 }
 
-/*#footer-map	{
-	width: 100%;
-	max-height: 250px;
-}*/
+/*--------- FOOTER -----------*/
 
 
-/*#footer-right, #footer-left {
-	border: 1px solid black;
-}*/
-
-/*#footer-left p {
-	padding: 0;
-	margin: 0;
-}*/
-
-/*#footer-right {
-	text-align: center;
-}*/
-
-footer ul {
-	list-style: none;
-	text-align: center;
-	padding-left: 0;
-/*	margin-top: 37px;
-    margin-bottom: 0px;*/
-}
-
-footer li {
-	display: inline;
+footer .row {
+	padding-bottom: 50px;
 }
 
 #email {
@@ -236,6 +201,24 @@ footer li {
 	vertical-align: middle;
 }
 
+#signature {
+	text-align: center;
+	font-size: .7rem;
+}
+
+#signature a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#signature a:hover,
+footer ul a:hover,
+footer a:hover {
+	color: #eceef1
+}
+
+/*--------- MEDIA QUERIES -----------*/
+
 @media screen and (max-width: 991px) {
   #footer-left {
   	padding-left: 50px;
@@ -246,4 +229,58 @@ footer li {
   #footer-right {
   	padding-left: 50px;
   }
+}
+
+@media only screen and (min-device-width : 310px) and (max-device-width : 480px) {
+
+body {
+	padding-top: 160px;
+}
+
+#jumbotron img {
+	max-width: 150px;
+}
+
+#jumbotron button {
+	width: 130px;
+	font-size: 15px;
+} 
+
+h1, 
+h2 {
+	font-size: 1.5rem;
+}
+
+#awards .wrapper {
+		max-width: 90%;
+}
+
+.medal {
+	max-width: 180px;
+}
+
+#pledgeForm {
+	width: 85%;
+}
+
+.footer-nav li:nth-child(2) {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.footer-nav li:first-child {
+    padding-right: 10px;
+}
+
+.footer-nav li:last-child {
+    padding-left: 10px;
+}
+
+#phone-icon,
+#insta-icon,
+#twitter-icon,
+#email-icon {
+	font-size: 1.5em;
+}
+
 }
